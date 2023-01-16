@@ -9,7 +9,6 @@ import PostRoute from "./Routes/PostRoute.js"
 import UploadRoute from "./Routes/UploadRoute.js"
 import  ChatRoute from "./Routes/ChatRoute.js"
 import MessageRoute from "./Routes/MessageRoute.js"
-import router from "./Routes/AuthRoute.js";
 
 
 // Routes
@@ -34,10 +33,6 @@ app.use(cors());
 
 chatDatabase();
 
-
-app.get("/",(req,res)=>{
-    res.send("Hello World Sakshi")
-})
 
 app.use('/auth',AuthRoute)
 app.use('/user',UserRoute)
